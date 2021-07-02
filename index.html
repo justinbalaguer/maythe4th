@@ -16,7 +16,7 @@
   const month = new Date().getMonth() + 1
   const date = new Date().getDate()
   let year = new Date().getFullYear()
-  if(month > 5 && date > 4) {
+  if(month > 5 && date > 4 || month > 6) {
     year += 1
   }
   const countDownDate = new Date(`May 4, ${year} 00:00:00`).getTime()
@@ -31,7 +31,7 @@
     + minutes + "m " + seconds + "s "
     if (distance < 0) {
       clearInterval(x)
-      document.getElementById("main").innerHTML = "May the 4th be with you 💜"
+      document.getElementById("main").innerHTML = "May the 4th be with you 💜 "
     }
   }, 1000)
 </script>
